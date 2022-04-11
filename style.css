@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--size: 150px;
+}
+
+body {
+	background-color: #0F172A;
+	color: #FFFFFF;
+}
+
+.ball {
+	position: absolute;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	background-color: white;
+	bottom: calc(100% - var(--size));  /*from bottom better to animation*/
+	left: calc(50% - var(--size) / 2);
+}
+
